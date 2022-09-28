@@ -23,9 +23,9 @@ jobs:
     - name: Tweet
       env:
         GITHUB_ACCESS_KEY: ${{ secrets.GIT_ACCESS_KEY }}
-        TWITTER_ACCESS_TOKEN_KEY: ${{ secrets.TWITTER_ACCESS_TOKEN_KEY }}
+        TWITTER_ACCESS_TOKEN_KEY: ${{ secrets.TWITTER_ACCESS_TOKEN }}
         TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
-        TWITTER_CONSUMER_KEY: ${{ secrets.TWITTER_CONSUMER_KEY }}
-        TWITTER_CONSUMER_SECRET: ${{ secrets.TWITTER_CONSUMER_SECRET }}
+        TWITTER_CONSUMER_KEY: ${{ secrets.TWITTER_CLIENT_ID }}
+        TWITTER_CONSUMER_SECRET: ${{ secrets.TWITTER_CLIENT_SECRET }}
       run: |
                 python run.py
